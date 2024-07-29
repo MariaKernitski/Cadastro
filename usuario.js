@@ -78,11 +78,14 @@ const listar = () => {
         ID: ${usuario.id}
         Nome: ${usuario.nome}
         E-mail: ${usuario.email}
+        Telefones: ${usuario.telefones} 
         `);
 
+        /*
         usuários.telefones.forEach((telefone, indice) => {
             console.log(`Telefone: ${indice + 1}: ${telefone}`);
         })
+        */
     })
 
 }
@@ -116,4 +119,11 @@ const remover = () => {
             }
         }
     })
+}
+
+module.exports = {
+    criar,
+    listar,
+    atualizar,
+    remover
 }
